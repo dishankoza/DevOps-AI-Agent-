@@ -45,22 +45,3 @@ cp devops_agent/devops.properties.template devops_agent/devops.properties
 pip install notebook
 jupyter notebook devops_agent/invoke_agent.ipynb
 ```
-
-5. Explore the example notebooks in:
-
-- [devops_agent/01_Create_Grafana_Assistant_Agent](devops_agent/01_Create_Grafana_Assistant_Agent)
-- [devops_agent/02_Create_GitHub_Assistant_Agent](devops_agent/02_Create_GitHub_Assistant_Agent)
-- [devops_agent/03_Create_Supervisor_Devops_Agent](devops_agent/03_Create_Supervisor_Devops_Agent)
-
-**Notes**
-- The `devops.properties.template` file contains placeholder keys required by the notebooks — do not commit secrets to version control.
-- Lambda examples are provided in the agent subfolders and can be packaged/deployed separately; see corresponding `lambda_requirements.txt` files.
-
-**Authors & License**
-- Authors: Gene Ting, Bharath Sridharan, Rachna Chadha, Maira Ladeira Tanke
-- License: Apache-2.0
-
-If you'd like, I can also:
-- run the notebooks end-to-end (if you give permission to install/execute), or
-- update any notebook README sections with specific example outputs.
-
